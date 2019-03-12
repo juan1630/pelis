@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card-columns" >
+        <div class="card"  style="width: 18rem;" *ngFor="let peli of pelis"  >
+          <img src="{{ url }}{{ peli.backdrop_path }}" alt="">
+         <div class="card-body">
+           <h5 class="card-title">{{ peli.title }}</h5>
+           <p class="card-text">{{ peli.overview }}</p>
+           <a href="#" class="btn btn-primary"> Ver más ... </a>
+         </div>
+        </div>
+       </div>
+    </div>
+  </div>
+</div>
